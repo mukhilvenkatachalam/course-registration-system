@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Courses</title>
+    <style>
+        table {
+            width: 80%;
+            margin: 40px auto;
+            border-collapse: collapse;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        th, td {
+            padding: 14px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #0984e3;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+    </style>
+    <script src="Script.js"></script>
+</head>
+<body>
+    <center>
+        <h1>Available Courses</h1>
+        <table>
+            <tr>
+                <th>Course ID</th>
+                <th>Course Name</th>
+                <th>Duration</th>
+                <th>Trainer</th>
+            </tr>
+            <tbody id="coursetable"></tbody>
+        </table>
+    </center>
+    <script>
+        window.onload = function(){
+            showCourses();
+        };
+    </script>
+</body>
+</html>
